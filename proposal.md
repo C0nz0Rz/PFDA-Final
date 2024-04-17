@@ -13,7 +13,7 @@ made and perhaps see something (perhaps a form) out of it that inspires them to 
 
 ### **Features:** 
 -A cool feature would be that it is almost always going to provide a unique pattern, since it randomizes the color that is painted on each square (of the 3 by 3).
-My only knowledge of how this would be possible is through the Pygame library, using the random method. I maybe could use Turtle, but I think that would be unnessisarily complicated.
+My only knowledge of how this would be possible is through the Pygame library, using the random method. I maybe could use Turtle, but I think that would be unnecessarily complicated.
 
 -It will be able to generate a 3 by 3 square artwork, then will translate and flip copies of said artwork over the X and Y axis. Which, when combined, will create a 6 by 6 artwork.
 The idea is that with the essentially "mirrored" image generated, it would appear to have order, composition, and ultimately, an artistic design.
@@ -25,14 +25,14 @@ The idea is that with the essentially "mirrored" image generated, it would appea
 
 
 ### **Challenges:**
--I am very new to Pygame, as well as applying the simple rules of Python. So brushing up on the doccumentation for the Pygame library as well as rewatching the chapter videos we've gone over would be helpful.
--Another library that would be good to read up on might be the Pillow doccumentation.
+-I am very new to Pygame, as well as applying the simple rules of Python. So brushing up on the documentation for the Pygame library as well as rewatching the chapter videos we've gone over would be helpful.
+-Another library that would be good to read up on might be the Pillow documentation.
 
 
 ### **Outcomes:**
--*Ideal Outcome*: Ideally, (like stated before) I would like the program to be able to generate a 6 by 6 square artwork, utilizing and correctly ajusting the random 3 x 3 square mini-art as a pattern. Additionally, I think it would be cool if it could save it as an image on my computer.
+-*Ideal Outcome*: Ideally, (like stated before) I would like the program to be able to generate a 6 by 6 square artwork, utilizing and correctly adjusting the random 3 x 3 square mini-art as a pattern. Additionally, I think it would be cool if I could save it as an image on my computer.
 
--*Minimal Viable Outcome*: I would like to at least be able to generate a random 3x3 square artwork, and have it visable to the viewer.
+-*Minimal Viable Outcome*: I would like to at least be able to generate a random 3x3 square artwork, and have it visible to the viewer.
 
 
 ### **Milestones:**
