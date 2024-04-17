@@ -1,0 +1,4 @@
+pip-installable 3rd party libraries:
+- pygame
+- pillow
+- imageio
