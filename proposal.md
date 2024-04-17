@@ -17,7 +17,7 @@ My only knowledge of how this would be possible is through the Pygame library, u
 The idea is that with the essentially "mirrored" image generated, it would appear to have order, composition, and ultimately, an artistic design.
 [(I think that it is incredible that python is capable of creating generative art, and I want to harness that ability here to make a simple artwork.)]
 
--I would like the program to save each generated artwork into an image file, so that it wouldn't just appear on the monitor, but be able to access or print by the user later. I might have to use the pillow library for this as well.
+-I would like the program to save each generated artwork into an image file, so that it wouldn't just appear on the monitor, but be able to be accessed or printed by the user later. I might have to use the pillow library for this as well.
 
 -I want to have the option to execute the command multiple times with a keyword. Like after the program generates one, it should prompt the user with a question asking to render another design.
 
