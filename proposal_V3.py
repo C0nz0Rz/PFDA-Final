@@ -1,6 +1,7 @@
 import pygame
 import random
 import time
+from datetime import datetime
 
     #that 3 by 3 artwork will be used as a pattern to create the 6 by 6 artwork.
     #I will reflect and translate the each of the 3/3 to create a "mirrored" piece of generative art that looks intentional,
@@ -24,15 +25,46 @@ def translate():
 #       then translate them down 3 (on the y-axis), as well as translate them to the right (on the x-axis) 3
 #       then finally, reflect the values across the y- axis
 
-def coloring():
+#def grid_pattern():
+    #for row in range(size):
+        #pattern = random.randrange(0, 256)
+
+
+#grid_pattern(3)
     ...
 
+#def coloring():
+    #red_value = random.randrange(0, 256)
+    #green_value = random.randrange(0, 256)
+    #blue_value = random.randrange(0, 256)    
 
 
 def main():
     ...
     #create a 6 by 6 pixel/square artwork that is randomly generated.
     #I would like a 3 by 3 pixel/square artwork to be randomly generated using two different colors.
+
+
+    
+    
+    running = True
+    size = 50
+
+    
+
+    scale = int(input("Pick a number between 2 and 5, which will be the scale of the art."))
+    scale = scale + 1
+
+
+    colors = []
+
+    for color in range(1, scale**2):
+        red_value = random.randrange(0, 256)
+        green_value = random.randrange(0, 256)
+        blue_value = random.randrange(0, 256)
+        rgb = (red_value, green_value, blue_value)
+        colors.append(rgb)
+
     pygame.init() 
     pygame.display.set_caption("Pixel_Art_Generation")
     clock = pygame.time.Clock()
@@ -43,13 +75,6 @@ def main():
     screen_res = (screen_info.current_w, screen_info.current_h)
     screen = pygame.display.set_mode(resolution, pygame.RESIZABLE, pygame.FULLSCREEN)
 
-
-    #Background = pygame.image.load("__")
-
-    red_value = random.randrange(0, 256)
-    green_value = random.randrange(0, 256)
-    blue_value = random.randrange(0, 256)
-    running = True
     while running:
         #Event Loop
         for event in pygame.event.get():
@@ -59,15 +84,26 @@ def main():
         #render game here
         screen.fill('blue')
         #create a loop to be repeated 3 times. Each time, the surface moves another surface length to the right.
-        for cube in range(1, 4):
-            surf = pygame.Surface((50, 50))
-            surf_width = surf.get_width
-            surf_height = surf.get_height
-            #surf_new_width = int(surf_width + )
-            pix_color = pygame.Color(red_value, green_value, blue_value)
-            #change "pix_color" function to randomize the color values.
-            surf.fill(pix_color)
-            screen.blit(surf, float(100 + [surf_width * cube], 100 + [surf_height * cube]))
+        #for cube in range(1, 4):
+
+        # TODO: 
+        #Input Scale number
+        #To set the scale of the art, give me a number between 3 and 7.
+        #Check the value inputed and make sure it's between 3 and 7.
+        #Allow the program to pause
+        #Maybe add a keystroke to be assigned to a pause button
+        #Save an image of the display
+        
+        counter = 0
+        for row in range(1 , scale):
+            for col in range(1, scale):
+                surf = pygame.Surface((size, size))
+                pix_color = pygame.Color(colors[counter])
+            # #change "pix_color" function to randomize the color values.
+                surf.fill(pix_color)
+                screen.blit(surf, (100 + (size * col), 100 + (size * row)))
+                counter += 1
+        
 
         #surf1_2 = pygame.Surface((50, 50))
         #pix_color = pygame.Color(red_value, green_value, blue_value)
@@ -78,6 +114,7 @@ def main():
 
         pygame.display.flip()
         clock.tick(60)
+    pygame.image.save(screen, f"Pixel_Art_Generation_{datetime.now().strftime("%B_%d_%Y_%I--%M_%S_%p")}.png")
     pygame.quit()
 
 if __name__ == "__main__":
