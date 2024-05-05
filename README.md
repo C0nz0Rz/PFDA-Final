@@ -33,4 +33,4 @@ In the future, I would like for this code to be able to take this square group a
 and flip copies of said artwork over the X and Y axis. Which, when combined, will create a 6 by 6 artwork.
   The idea is that with the essentially "mirrored" image generated, it would appear to have order, composition, and ultimately, an artistic design.
 
-![An example of a pattern that could be generated.](/Users/conno/Desktop/Programing%20for%20DA/Final%20Project/PFDA-Final/Pattern_Example.jpeg)
+![An example of a pattern that could be generated.](Pattern_Example.jpeg)
