@@ -31,6 +31,6 @@ Initially, the code would make each square generate a new color as many times a 
 ## Future areas of improvement
 In the future, I would like for this code to be able to take this square group artwork generated and (use it as a pattern) then will translate
 and flip copies of said artwork over the X and Y axis. Which, when combined, will create a 6 by 6 artwork.
-  The idea is that with the essentially "mirrored" image generated, it would appear to have order, composition, and ultimately, an artistic design.
+  The idea is that with the essentially "mirrored" image generated, it would appear to have order, composition, and ultimately, a more artistic design.
 
 ![An example of a pattern that could be generated.](Pattern_Example.jpeg)
